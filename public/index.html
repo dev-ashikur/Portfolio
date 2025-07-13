@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-orange-50 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-orange-600 text-white p-4 fixed w-full z-50 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-orange-200">CreativeFlow.</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-orange-200 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-orange-200 transition duration-300">About</a>
+                <a href="#services" class="hover:text-orange-200 transition duration-300">Services</a>
+                <a href="#portfolio" class="hover:text-orange-200 transition duration-300">Portfolio</a>
+                <a href="#contact" class="hover:text-orange-200 transition duration-300">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-orange-700 mt-4 rounded-lg shadow-lg">
+            <a href="#home" class="block py-3 px-6 text-lg hover:bg-orange-800 transition duration-300">Home</a>
+            <a href="#about" class="block py-3 px-6 text-lg hover:bg-orange-800 transition duration-300">About</a>
+            <a href="#services" class="block py-3 px-6 text-lg hover:bg-orange-800 transition duration-300">Services</a>
+            <a href="#portfolio" class="block py-3 px-6 text-lg hover:bg-orange-800 transition duration-300">Portfolio</a>
+            <a href="#contact" class="block py-3 px-6 text-lg hover:bg-orange-800 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="h-screen flex items-center justify-center text-center relative overflow-hidden parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-orange-600 opacity-10"></div>
+            <div class="relative z-10 p-8 max-w-5xl mx-auto animated-fade-in">
+                <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-orange-400 drop-shadow-lg animated-fade-in">Innovate. Create. Inspire.</h2>
+                <p class="text-xl md:text-2xl leading-relaxed mb-10 text-gray-200 drop-shadow-md animated-fade-in">We are a creative agency dedicated to transforming ideas into stunning digital realities.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#portfolio" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg tracking-wide animated-fade-in">Explore Our Work</a>
+                    <a href="#contact" class="bg-transparent border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg tracking-wide animated-fade-in">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-orange-100">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2 animated-slide-left">
+                    <h3 class="text-4xl font-bold mb-6 text-orange-600">About CreativeFlow Agency</h3>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-800">CreativeFlow Agency is a creative powerhouse dedicated to crafting exceptional digital solutions. We combine strategic thinking with innovative design and robust development to deliver results that exceed expectations.</p>
+                    <p class="text-lg leading-relaxed text-gray-800">Our team of passionate experts thrives on challenges, turning complex ideas into intuitive and engaging experiences. We believe in building strong partnerships with our clients, ensuring every project is a collaborative success.</p>
+                </div>
+                <div class="md:w-1/2 animated-slide-right">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Us" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-orange-50">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-4xl font-bold mb-12 text-orange-600 animated-fade-in">Our Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transform hover:scale-105 transition duration-300">
+                        <div class="text-orange-600 mb-4 animated-fade-in">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h4l2-2m3-7l4-4m-6 4a3 3 0 11-6 0 3 3 0 016 0zm0 0V9a2 2 0 10-4 0v2m-4 4h8m-8 0H5a2 2 0 00-2 2v1a2 2 0 002 2h14a2 2 0 002-2v-1a2 2 0 00-2-2h-1"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 animated-fade-in text-gray-900 leading-snug">Web Design & Development</h4>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">Crafting stunning, responsive, and user-friendly websites that drive engagement and conversions.</p>
+                    </div>
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transform hover:scale-105 transition duration-300">
+                        <div class="text-orange-600 mb-4 animated-fade-in">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 animated-fade-in text-gray-900 leading-snug">Mobile App Development</h4>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">Building intuitive and high-performance mobile applications for iOS and Android platforms.</p>
+                    </div>
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transform hover:scale-105 transition duration-300">
+                        <div class="text-orange-600 mb-4 animated-fade-in">
+                            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 animated-fade-in text-gray-900 leading-snug">Digital Marketing</h4>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">Driving online visibility and growth through SEO, social media, and content marketing strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 bg-orange-100 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1497032628194-c25449f7f247?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+            <div class="container mx-auto px-4 text-center relative z-10">
+                <h3 class="text-4xl font-bold mb-12 text-orange-600 animated-fade-in">Our Creative Portfolio</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="relative group animated-fade-in bg-orange-50 p-4 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1" class="w-full h-64 object-cover rounded-md transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                            <h4 class="text-2xl font-bold text-white mb-2 leading-snug">Code Editor UI</h4>
+                            <p class="text-gray-300 text-center leading-relaxed">A sleek and intuitive code editor interface design with dark theme.</p>
+                            <a href="#" class="mt-4 text-orange-400 hover:text-orange-300 font-semibold">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="relative group animated-fade-in bg-orange-50 p-4 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 2" class="w-full h-64 object-cover rounded-md transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                            <h4 class="text-2xl font-bold text-white mb-2 leading-snug">Responsive Website Redesign</h4>
+                            <p class="text-gray-300 text-center leading-relaxed">Modern and responsive redesign of an existing corporate website.</p>
+                            <a href="#" class="mt-4 text-orange-400 hover:text-orange-300 font-semibold">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="relative group animated-fade-in bg-orange-50 p-4 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://media.istockphoto.com/id/2148804792/photo/two-data-analysts-working-on-data-analysis-dashboard-for-business-strategy.webp?a=1&b=1&s=612x612&w=0&k=20&c=cOHRPex7aXhOYASJ9gpqSB8NXNTvC5-UAZ-Gfh40gp4=" alt="Project 3" class="w-full h-64 object-cover rounded-md transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                            <h4 class="text-2xl font-bold text-white mb-2 leading-snug">Data Visualization Dashboard</h4>
+                            <p class="text-gray-300 text-center leading-relaxed">Interactive dashboard for visualizing complex datasets.</p>
+                            <a href="#" class="mt-4 text-orange-400 hover:text-orange-300 font-semibold">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Team Section -->
+        <section id="team" class="py-20 bg-orange-50">
+            <div class="container mx-auto px-4 text-center">
+                <h3 class="text-4xl font-bold mb-12 text-orange-600 animated-fade-in">Meet Our Team</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transition duration-300 group">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 1" class="rounded-full w-32 h-32 mx-auto mb-6 object-cover border-4 border-orange-400 animated-fade-in transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="text-2xl font-bold mb-2 animated-fade-in text-gray-900 leading-snug">Jane Doe</h4>
+                        <p class="text-orange-600 mb-4 animated-fade-in leading-relaxed">CEO & Founder</p>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">Jane is the visionary behind CreativeFlow Agency, driving our mission to deliver innovative digital solutions. Her leadership and strategic insights are invaluable.</p>
+                    </div>
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transition duration-300 group">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 2" class="rounded-full w-32 h-32 mx-auto mb-6 object-cover border-4 border-orange-400 animated-fade-in transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="text-2xl font-bold mb-2 animated-fade-in text-gray-900 leading-snug">John Smith</h4>
+                        <p class="text-orange-600 mb-4 animated-fade-in leading-relaxed">Lead Designer</p>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">John is our creative genius, responsible for crafting visually stunning and user-friendly interfaces that captivate audiences.</p>
+                    </div>
+                    <div class="bg-orange-100 p-8 rounded-lg shadow-xl animated-fade-in transition duration-300 group">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member 3" class="rounded-full w-32 h-32 mx-auto mb-6 object-cover border-4 border-orange-400 animated-fade-in transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="text-2xl font-bold mb-2 animated-fade-in text-gray-900 leading-snug">Emily White</h4>
+                        <p class="text-orange-600 mb-4 animated-fade-in leading-relaxed">Senior Developer</p>
+                        <p class="text-gray-800 animated-fade-in leading-relaxed">Emily is a master of code, bringing designs to life with clean, efficient, and scalable solutions across various platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-orange-700 text-white p-4 rounded-full shadow-lg hover:bg-orange-700 transition duration-300 ease-in-out transform hover:scale-110 hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-orange-600 py-10 text-center text-orange-200">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 CreativeFlow. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-orange-400 transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.41-4.26 4.107 4.107 0 001.27 5.477A4.072 4.072 0 012 10.72v.055a4.107 4.107 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.844"></path></svg></a>
+                <a href="#" class="hover:text-orange-400 transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.262c-1.225 0-1.628.76-1.628 1.563V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10S17.523 2 12 2z" clip-rule="evenodd"></path></svg></a>
+                <a href="#" class="hover:text-orange-400 transition duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.419 2.865 8.163 6.839 9.504.5.092.682-.217.682-.483 0-.237-.007-.866-.012-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.097-2.659 0 0 .84-.268 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.7.115 2.5.336 1.909-1.293 2.747-1.025 2.747-1.025.546 1.389.202 2.406.099 2.659.64.698 1.028 1.591 1.028 2.682 0 3.841-2.339 4.687-4.566 4.935.359.307.678.915.678 1.846 0 1.335-.012 2.41-.012 2.737 0 .267.18.579.688.482A10 10 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/src/app.js"></script>
+</body>
+</html>
